@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 def bubble_sort(list)
   iter = list.size - 2
   max_iter = list.size - 2
@@ -30,7 +31,5 @@ def bubble_sort_by(list)
   end
   list
 end
-print (bubble_sort_by(['hello', 'hey', 'hi']) do |left, right|
-  left.length - right.length
+print (bubble_sort_by(['hello', 'hey', 'hi']) do |left, right|  left.length - right.length
   end)
-
