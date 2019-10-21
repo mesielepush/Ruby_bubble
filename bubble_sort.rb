@@ -1,5 +1,3 @@
-
-
 def bubble_sort(list)
     iter = list.size - 2
     max_iter = list.size - 2
