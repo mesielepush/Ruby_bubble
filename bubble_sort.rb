@@ -1,4 +1,4 @@
-
+list = [9,8,7,4,5,6,1,2,3]
 def bubble_sort(list)
     iter = list.size - 2
     max_iter = list.size - 2
@@ -19,4 +19,7 @@ def bubble_sort(list)
     end
     return list
 end
+a = bubble_sort(list)
+print a
+
 
