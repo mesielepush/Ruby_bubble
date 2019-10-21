@@ -14,14 +14,14 @@ def bubble_sort(list)
     puts 'max_iter: ', max_iter
     break unless swap
   end
-  return list
+  list
 end
 
 def bubble_sort_by(list)
   loop do
     swap = false
-    (list.length-1).times do |i|
-      if yield(list[i], list[i + 1]) > 0
+    (list.length - 1).times do |i|
+      if yield(list[i], list[i + 1]).positive?
         list[i], list[i + 1] = list[i + 1], list[i]
         swap = true
       end
