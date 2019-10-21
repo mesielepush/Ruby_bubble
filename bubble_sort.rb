@@ -25,7 +25,7 @@ def bubble_sort_by(list)
   loop do
       swap = false
       (list.length-1).times do |i|
-          if list[i], list[i+1] > 0
+          if yield(list[i], list[i+1]) > 0
               list[i], list[i+1] = list[i+1], list[i]
               swapped = true
           end
