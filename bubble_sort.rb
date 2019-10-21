@@ -10,12 +10,11 @@ def bubble_sort(list)
         swap = true
       end
     end
-
-  max_iter -= 1
-  puts 'max_iter: ', max_iter
-  if swap == false
+    max_iter -= 1
+    puts 'max_iter: ', max_iter
+    if swap == false
       break
-  end
+    end
   end
   return list
 end
