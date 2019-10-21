@@ -12,7 +12,7 @@ def bubble_sort(list)
     end
     max_iter -= 1
     puts 'max_iter: ', max_iter
-    break if not swapped
+    break if !swapped
   end
   return list
 end
@@ -26,7 +26,7 @@ def bubble_sort_by(list)
         swapped = true
       end
     end
-    break if not swap
+    break if !swap
   end
   list
 end
