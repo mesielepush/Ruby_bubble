@@ -1,4 +1,4 @@
-list = [9,8,7,4,5,6,1,2,3]
+
 
 def bubble_sort(list)
     iter = list.size - 2
@@ -21,16 +21,7 @@ def bubble_sort(list)
     return list
 end
 
-def bubble_sort_by(list)
-    
-    lengths = Array.new
-    j=0
-
-    for words in list 
-        lengths[j]=words.length
-        j += 1
-    end
-
+def bubble_sort(list)
     iter = list.size - 2
     max_iter = list.size - 2
     while max_iter >= 2
@@ -50,7 +41,24 @@ def bubble_sort_by(list)
     end
     return list
 end
-a = bubble_sort(list)
-print a
 
+
+def bubble_sort_by(list)
+  loop do
+      swap = false
+      (list.length-1).times do |i|
+          if list[i], list[i+1] > 0
+              list[i], list[i+1] = list[i+1], list[i]
+              swapped = true
+          end
+      end
+      if swap == false
+          break
+      end
+  end
+  list
+end
+print (bubble_sort_by(["hello", "hey", "hi"]) do |left, right|
+left.length - right.length
+end)
 
