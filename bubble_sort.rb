@@ -3,7 +3,7 @@
 def bubble_sort(list)
   iter = list.size - 2
   max_iter = list.size - 2
-  while max_iter >= 2
+  while max_iter >= 0
     swap = false
     0.upto(iter) do |i|
       if list[i] > list[i + 1]
